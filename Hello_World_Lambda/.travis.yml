@@ -1,6 +1,6 @@
 deploy:
   - provider: script
-    script: node scripts/aws-lambda-deploy.js hello-world production
+    script: node scripts/aws-lambda-deploy.js my-function
     skip_cleanup: true
     on:
       branch: main
