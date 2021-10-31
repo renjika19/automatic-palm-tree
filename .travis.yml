@@ -1,0 +1,6 @@
+deploy:
+  - provider: script
+    script: node scripts/aws-lambda-deploy.js hello-world production
+    skip_cleanup: true
+    on:
+      branch: master
